@@ -1,5 +1,4 @@
-cat > README.md << 'EOF'
-# 🎥 StereoGeo Dataset
+# StereoGeo Dataset
 
 **StereoGeo: an end-to-end stereo camera calibration method**
 
@@ -9,13 +8,13 @@ cat > README.md << 'EOF'
 
 ---
 
-## 📖 Introduction
+## Introduction
 
 **StereoGeo** is a comprehensive stereo camera calibration dataset designed for deep learning-based calibration methods. It addresses the challenge of jointly estimating intrinsic and extrinsic camera parameters without calibration patterns.
 
 The complete training dataset consists of **55,913 stereo pairs** from three complementary sources:
 
-### 🏢 Dataset Composition
+### Dataset Composition
 
 | Dataset | Pairs | Source | Characteristics |
 |---------|-------|--------|-----------------|
@@ -26,13 +25,13 @@ The complete training dataset consists of **55,913 stereo pairs** from three com
 
 ---
 
-## 🚗 CARLA Public Dataset
+## CARLA Public Dataset
 
 We publicly release the **CARLA stereo subset** (12,220 pairs, 12.2 GB) with ground-truth calibration parameters:
 
 <div align="center">
 
-**[📥 Download from HuggingFace](https://huggingface.co/datasets/meddourimane/StereoGeo-dataset)**
+**[Download from HuggingFace](https://huggingface.co/datasets/meddourimane/StereoGeo-dataset)**
 
 </div>
 
@@ -46,7 +45,7 @@ We publicly release the **CARLA stereo subset** (12,220 pairs, 12.2 GB) with gro
 - Vertical FoV: 55° - 75°
 - Total size: ~12.2 GB
 
-### 🖼️ Example Stereo Pairs
+### Example Stereo Pairs
 
 <table>
 <tr>
@@ -62,7 +61,7 @@ We publicly release the **CARLA stereo subset** (12,220 pairs, 12.2 GB) with gro
 
 
 
-## 📊 Dataset Details
+## Dataset Details
 
 ### SUNCG Subset (38,324 pairs)
 - **Source:** SUNCG + 3D60 panoramas
@@ -84,7 +83,7 @@ We publicly release the **CARLA stereo subset** (12,220 pairs, 12.2 GB) with gro
 
 ---
 
-## 📁 Data Access
+## Data Access
 
 ### Public Dataset (CARLA)
 - **HuggingFace:** https://huggingface.co/datasets/meddourimane/StereoGeo-dataset
@@ -94,7 +93,7 @@ We publicly release the **CARLA stereo subset** (12,220 pairs, 12.2 GB) with gro
 
 ---
 
-## 📄 Citation
+## Citation
 
 If you use the StereoGeo dataset, please cite:
 
@@ -109,7 +108,7 @@ If you use the StereoGeo dataset, please cite:
 
 ---
 
-## 📖 Paper
+## Paper
 
 **StereoGeo: End-to-End Stereo Camera Calibration via Learning and Optimization**
 
@@ -125,7 +124,7 @@ If you use the StereoGeo dataset, please cite:
 
 ---
 
-## 📜 License
+## License
 
 This dataset is licensed under **Creative Commons Attribution 4.0 International (CC-BY-4.0)**
 
