@@ -3,7 +3,7 @@
 **StereoGeo: an end-to-end stereo camera calibration method**
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/XXXX.XXXXX)
-[![License](https://img.shields.io/badge/License-CC%20BY%204.0-green)]
+![License](https://img.shields.io/badge/License-CC%20BY%204.0-green)
 [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-FFD21E)](https://huggingface.co/datasets/meddourimane/StereoGeo-CARLA)
 
 ---
