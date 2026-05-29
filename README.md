@@ -90,7 +90,7 @@ This dataset is licensed under **Creative Commons Attribution 4.0 International 
 If you use the StereoGeo dataset, please cite:
 
 ```bibtex
-@inproceedings{anfel2026stereogeo,
+@inproceedings{2026stereogeo,
   title={StereoGeo: End-to-End Stereo Camera Calibration Method},
   author={imane, Andréa, Cédric},
   booktitle={EUSIPCO},
