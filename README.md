@@ -4,7 +4,7 @@
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/XXXX.XXXXX)
 [![License](https://img.shields.io/badge/License-CC%20BY%204.0-green)]
-[![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-FFD21E)](https://huggingface.co/datasets/meddourimane/StereoGeo-dataset)
+[![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-FFD21E)](https://huggingface.co/datasets/meddourimane/StereoGeo-CARLA)
 
 ---
 
@@ -16,13 +16,12 @@ The complete training dataset consists of **55,913 stereo pairs** from three com
 
 ### Dataset Composition
 
-| Dataset | Pairs | Source | Characteristics |
-|---------|-------|--------|-----------------|
-| **SUNCG** | 38,324 | Indoor Panoramas | Diverse scenes via 3D60 |
-| **CARLA** | 12,220 | Driving Simulator | Urban scenarios, weather variation |
-| **TartanAir** | 5,000 | Synthetic Environments | Varied geometric structures |
-| **TOTAL** | **55,913** | Mixed | 90% train / 5% val / 5% test |
-
+| Dataset | Pairs | Source | Type | Details |
+|---------|-------|--------|------|---------|
+| **SUNCG** | 38,324 | SUNCG + 3D60 panoramas | Indoor scenes | 16 crops/panorama, baseline fixe 0.26 m |
+| **CARLA** | 12,220 | CARLA Simulator | Urban driving | Multi-villes & météos, baseline 0.20–0.70 m |
+| **TartanAir** | 5,000 | TartanAir dataset | 12 env. simulés | Diversité géométrique |
+| **TOTAL** | **55,913** | Mixed | — | 90% train / 5% val / 5% test |
 ---
 
 ## CARLA Public Dataset
@@ -31,7 +30,7 @@ We publicly release the **CARLA stereo subset** (12,220 pairs, 12.2 GB) with gro
 
 <div align="center">
 
-**[Download from HuggingFace](https://huggingface.co/datasets/meddourimane/StereoGeo-dataset)**
+**[Download from HuggingFace](https://huggingface.co/datasets/meddourimane/StereoGeo-CARLA)**
 
 </div>
 
@@ -41,7 +40,7 @@ We publicly release the **CARLA stereo subset** (12,220 pairs, 12.2 GB) with gro
 - 12,220 stereo image pairs
 - Resolution: 640×640 pixels
 - Baseline range: 0.20 - 0.70 m
-- Roll/Pitch: ±45°
+- Roll/Pitch: ±0.5°
 - Vertical FoV: 55° - 75°
 - Total size: ~12.2 GB
 
@@ -53,42 +52,36 @@ We publicly release the **CARLA stereo subset** (12,220 pairs, 12.2 GB) with gro
 <td><b>Right Camera</b></td>
 </tr>
 <tr>
-<td><img src="examples/left.png" width="320"></td>
-<td><img src="examples/right.png" width="320"></td>
+<td><img src="examples/left_image.png" width="320"></td>
+<td><img src="examples/right_image.png" width="320"></td>
 </tr>
 </table>
 
+---
 
 
-
-## Dataset Details
-
-### SUNCG Subset (38,324 pairs)
-- **Source:** SUNCG + 3D60 panoramas
-- **Type:** Indoor scenes
-- **Generation:** 16 crops per panorama with variable orientation
-- **Baseline:** Fixed 0.26 m
-
-### CARLA Subset (12,220 pairs) ✅ **PUBLIC**
-- **Source:** CARLA Simulator
-- **Type:** Urban driving scenarios
-- **Generation:** Multiple towns & weather conditions
-- **Baseline:** Variable (0.20 - 0.70 m)
-- **Download:** [HuggingFace](https://huggingface.co/datasets/meddourimane/StereoGeo-dataset)
-
-### TartanAir Subset (5,000 pairs)
-- **Source:** TartanAir dataset
-- **Type:** 12 diverse simulated environments
-- **Purpose:** Geometric diversity
+### Key Contributions
+- First learning-based method for joint stereo intrinsic & extrinsic calibration
+- No calibration patterns required
+- Independent per-camera intrinsic estimation
+- State-of-the-art performance on KITTI
 
 ---
 
-## Data Access
+## License
 
-### Public Dataset (CARLA)
-- **HuggingFace:** https://huggingface.co/datasets/meddourimane/StereoGeo-dataset
-- **Format:** PNG images + CSV metadata
-- **License:** CC-BY-4.0
+This dataset is licensed under **Creative Commons Attribution 4.0 International (CC-BY-4.0)**
+
+
+
+
+## Acknowledgments
+
+
+- CGP has benefited from French State aid managed by the Agence Nationale de la Recherche (ANR) under France 2030 program with the reference ANR-23-PEIA-005 (REDEEM project)
+- CARLA Simulator Team
+- 3D60 Dataset Authors
+- TartanAir Dataset Authors
 
 
 ---
@@ -106,41 +99,3 @@ If you use the StereoGeo dataset, please cite:
 }
 ```
 
----
-
-## Paper
-
-**StereoGeo: End-to-End Stereo Camera Calibration via Learning and Optimization**
-
-📌 Published at: EUSIPCO 2026
-
-👉 [Read the paper](https://example.com)
-
-### Key Contributions
-- First learning-based method for joint stereo intrinsic + extrinsic calibration
-- No calibration patterns required
-- Independent per-camera intrinsic estimation
-- State-of-the-art performance on KITTI
-
----
-
-## License
-
-This dataset is licensed under **Creative Commons Attribution 4.0 International (CC-BY-4.0)**
-
-
-
-
-## 🙏 Acknowledgments
-
-- CARLA Simulator Team
-- 3D60 Dataset Authors
-- TartanAir Dataset Authors
-- CEA-List
-- Université Paris-Sacaly
-- EUSIPCO 2026 Conference
-
----
-
-**Last Updated:** May 2026
-EOF
