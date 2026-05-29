@@ -34,9 +34,8 @@ We publicly release the **CARLA stereo subset** (12,220 pairs, 12.2 GB) with gro
 
 </div>
 
-### Dataset Statistics
+### CARLA Statistics
 
-**CARLA Subset:**
 - 12,220 stereo image pairs
 - Resolution: 640×640 pixels
 - Baseline range: 0.20 - 0.70 m
