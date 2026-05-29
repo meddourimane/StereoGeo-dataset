@@ -18,9 +18,9 @@ The complete training dataset consists of **55,913 stereo pairs** from three com
 
 | Dataset | Pairs | Source | Type | Details |
 |---------|-------|--------|------|---------|
-| **SUNCG** | 38,324 | SUNCG + 3D60 panoramas | Indoor scenes | 16 crops/panorama, baseline fixe 0.26 m |
-| **CARLA** | 12,220 | CARLA Simulator | Urban driving | Multi-villes & météos, baseline 0.20–0.70 m |
-| **TartanAir** | 5,000 | TartanAir dataset | 12 env. simulés | Diversité géométrique |
+| **SUNCG** | 38,324 | SUNCG + 3D60 panoramas | Indoor scenes | 16 crops/panorama, fixed baseline 0.26 m |
+| **CARLA** | 12,220 | CARLA Simulator | Urban driving | Multi-city & weather, baseline 0.20–0.70 m |
+| **TartanAir** | 5,000 | TartanAir dataset | 12 simulated env. | Geometric diversity |
 | **TOTAL** | **55,913** | Mixed | — | 90% train / 5% val / 5% test |
 ---
 
