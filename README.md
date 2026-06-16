@@ -2,7 +2,7 @@
 
 **StereoGeo: an end-to-end stereo camera calibration method**
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/XXXX.XXXXX)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2606.14619)
 ![License](https://img.shields.io/badge/License-CC%20BY%204.0-green)
 [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-FFD21E)](https://huggingface.co/datasets/meddourimane/StereoGeo-CARLA)
 
@@ -90,11 +90,14 @@ This dataset is licensed under **Creative Commons Attribution 4.0 International 
 If you use the StereoGeo dataset, please cite:
 
 ```bibtex
-@inproceedings{2026stereogeo,
-  title={StereoGeo: End-to-End Stereo Camera Calibration Method},
-  author={imane, Andréa, Cédric},
-  booktitle={EUSIPCO},
-  year={2026}
+@misc{meddour2026stereogeoendtoendstereocamera,
+      title={StereoGeo: an end-to-end stereo camera calibration method}, 
+      author={Imane Meddour and Andréa Macario Barros and Cédric Gouy-Pailler},
+      year={2026},
+      eprint={2606.14619},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2606.14619}, 
 }
 ```
 
